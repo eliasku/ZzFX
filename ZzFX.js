@@ -128,7 +128,7 @@ export const ZZFX =
         for(length = attack + decay + sustain + release + delay | 0;
             i < length; b[i++] = s)
         {
-            if (!(++c%(bitCrush*100|0)))                      // bit crush
+            if (!(++c%bitCrush))                      // bit crush
             { 
                 s = shape? shape>1? shape>2? shape>3?         // wave shape
                     Math.sin((t%PI2)**3) :                    // 4 noise
